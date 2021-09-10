@@ -1,0 +1,16 @@
+language: java
+
+dist: 20.04
+
+jdk:
+  - openjdk8
+install:
+  -mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+sudo: false # faster builds
+
+script:
+  - junit
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
