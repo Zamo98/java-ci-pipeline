@@ -1,7 +1,6 @@
 import javax.swing.*;
 
 public class Operacion {
-    //String opcion1="";
     int resultado;
 
     public void escogerOpcion(){
